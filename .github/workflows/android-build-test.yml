@@ -25,9 +25,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: cd android
-        run: git submodule update --init --recursive
-      - name: cd android
-        run: cd android
+        run:  cd android
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
