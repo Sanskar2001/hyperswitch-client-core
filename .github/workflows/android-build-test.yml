@@ -43,6 +43,8 @@ jobs:
       - name: Install Example app dependencies
         working-directory: ${{ env.WORKING_DIRECTORY }}
         run: yarn
+      - name: cd android
+        run: cd android
       - name: Build app
-        working-directory: ${{ env.WORKING_DIRECTORY }}/android
         run: ./gradlew assembleDebug --console=plain
+ 
